@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Typing Game";
+    <link rel="stylesheet" href="~/css/typing-game.css" />
+}
+
+<body>
+    <h1>Typing Game</h1>
+    <p>Practice your typing skills with a quote from Sherlock Holmes. Press the *START* button to begin the game!</p>
+    <p id="quote"></p>
+    <p id="message"></p>
+    <div>
+        <input type="text" aria-label="current word" id="typed-value" />
+        <button type="button" id="start">Start</button>
+    </div>
+    <script src="~/js/typing-game.js"></script>
+</body>
