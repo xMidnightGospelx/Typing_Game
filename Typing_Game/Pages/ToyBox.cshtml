@@ -1,0 +1,22 @@
+﻿@page
+@model ToyBoxModel
+@{
+    ViewData["Title"] = "Home Page";
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+<body>
+    <h1>Welcome!</h1>
+    <h2>Check out our Library of Games</h2>
+    <h4>Let's Type</h4>
+    <p>Is a typing game where you can test your typing speed while reading fun quotes from Sherlock Holmes.</p>
+    <h4>My Toy Box</h4>
+    <p>Is a interactive play space where you can drag a drop different toys to create your on stories.</p>
+    <h4>Alien Invasion</h4>
+    <p>Is a retro spaceship game where you fight a massive wave of alien invaders.</p>
+    <div>
+        <input type="text" aria-label="current word" id="typed-value" />
+        <button type="button" id="start">Start</button>
+    </div>
+    <script src="~/js/home.js"></script>
+</body>
