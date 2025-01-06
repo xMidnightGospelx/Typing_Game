@@ -1,22 +1,78 @@
 ﻿@page
 @model ToyBoxModel
 @{
-    ViewData["Title"] = "Home Page";
-    <link rel="stylesheet" href="~/css/home.css" />
+    ViewData["Title"] = "My Toy Box";
+    <link rel="stylesheet" href="~/css/toy-box.css" />
+	
 }
 
+<head>
+	<title>Welcome to My Toy Box</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=5" />
+	
+</head>
+
 <body>
-    <h1>Welcome!</h1>
-    <h2>Check out our Library of Games</h2>
-    <h4>Let's Type</h4>
-    <p>Is a typing game where you can test your typing speed while reading fun quotes from Sherlock Holmes.</p>
-    <h4>My Toy Box</h4>
-    <p>Is a interactive play space where you can drag a drop different toys to create your on stories.</p>
-    <h4>Alien Invasion</h4>
-    <p>Is a retro spaceship game where you fight a massive wave of alien invaders.</p>
-    <div>
-        <input type="text" aria-label="current word" id="typed-value" />
-        <button type="button" id="start">Start</button>
-    </div>
-    <script src="~/js/home.js"></script>
+	<div id="page">
+		<h1>Toy Space</h1>
+		<div id="left-box" class="box">
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant1" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant2" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant3" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant4" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant5" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant6" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant7" src="./images/Screenshot 2025-01-05 171757.png" />
+			</div>
+		</div>
+		<div id="right-box" class="box">
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant8" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant9" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant10" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant11" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant12" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant13" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+			<div class="plant-holder">
+				<img class="plant" alt="plant" id="plant14" src="./images/Screenshot 2025-01-05 181726.png" />
+			</div>
+		</div>
+
+		<div id="toyBox">
+			<div class="jar-top"></div>
+			<div class="jar-walls">
+				<div class="jar-glossy-long"></div>
+				<div class="jar-glossy-short"></div>
+			</div>
+			<div class="dirt"></div>
+			<div class="jar-bottom"></div>
+		</div>
+	</div>
+	<script src="~/js/toy-box.js"></script>
 </body>
